@@ -1,0 +1,40 @@
+1ª Etapa: 
+1. Gráficos de calor para toda região de carajás/para cada ano
+2. Gráfico de calor para toda região de carajás considerando a média dos anos (2020, 2021, 2022, 2023). 
+3. Gráfico de calor para toda região de carajás considerando a mediano dos anos(2020, 2021, 2022, 2023).
+
+4. Gráficos de colunas empilhado do quantitativo total de raios (IN e NS) para cada município/para cada ano.
+5. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município, considerando a média dos anos.
+6. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município, considerando a mediano dos anos.
+
+7. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando cada ano.
+8. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando a média dos meses.
+9. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando a mediana dos meses.
+
+10. Gráficos de coluna/município do quantitativo total de raios por meses. Realizar isso para cada ano.
+11. Gráfico de coluna/município do quantitatito total de raios por meses. Obter através da média dos anos.
+12. Gráfico de coluna/município do quantitativo total de raios por meses. Obter através da mediano dos anos.
+
+13. Gráfico de coluna empilhado de eventos de raios por hora e classes de intensidade de corrente de pico (Seguir  anexo 1 enviado).
+Fazer esse gráfico para cada município.
+14. Gráficos boxplot de corrente de pico para cada município/ano.
+15. Gráfico boxplot de corrente de pico para cada município, considerando todos os anos. 
+
+16. Gráfico de linhas de eventos de raios positivo e negativo por hora, para cada município/ano (Seguir anexo 2 enviado).
+17. Gráfico de coluna dupla do total de raio positivo e negativo para cada município mensal/para cada ano.
+18. Gráfico de coluna dupla do total de raio positivo e negativo para cada município mensal/considerando a média dos anos.
+19. Gráfico de coluna dupla do total de raio positivo e negativo para cada município mensal/considerando a mediana dos anos.
+
+Prazo: 03/05/2025
+
+Etapa 2:
+1. Mapa de densidade de raios para a região de Carajás.
+2. Analisar as influências de acordo com os pontos de maior incidência de raios. 
+
+
+
+
+
+
+
+

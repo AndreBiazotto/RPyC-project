@@ -1,0 +1,17 @@
+1ª Etapa: 
+1. Gráficos de calor para toda região de carajás/para cada ano
+2. Gráfico de calor para toda região de carajás considerando a média dos anos (2020, 2021, 2022, 2023). 
+3. Gráfico de calor para toda região de carajás considerando a mediano dos anos(2020, 2021, 2022, 2023).
+
+4. Gráficos de colunas empilhado do quantitativo total de raios (IN e NS) para cada município/para cada ano.
+5. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município, considerando a média dos anos.
+6. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município, considerando a mediano dos anos.
+
+7. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando cada ano.
+8. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando a média dos meses.
+9. Gráfico de coluna empilhado do quantitativo total de raios (IN e NS) para cada município/meses, considerando a mediana dos meses.
+
+10. Gráficos de coluna/município do quantitativo total de raios por meses. Realizar isso para cada ano.
+11. Gráfico de coluna/município do quantitatito total de raios por meses. Obter através da média dos anos.
+12. Gráfico de coluna/município do quantitativo total de raios por meses. Obter através da mediano dos anos.
+
