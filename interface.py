@@ -65,6 +65,7 @@ def download():
     id_item = tv_consult.focus()
     json_dados = tv_consult.item(id_item)
     nome_arquivo = json_dados["values"][0]
+    
     dados = gen.download(nome_arquivo) # Download
     
     # Abre uma caixa de diálogo e escreve os dados na pasta selecionada

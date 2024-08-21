@@ -102,7 +102,7 @@ class Arquivos(rpyc.Service):
                                 user = dados["user"].to_list()
                                 interesse = dados["interesse"].to_list()
                                 existe = dados["existe"].to_list()
-
+                                
                                 existe[index] = "sim"
 
                                 dados = pd.DataFrame({"user": user, "interesse": interesse, "existe": existe})
