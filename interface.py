@@ -8,8 +8,24 @@ import os
 
 user = simpledialog.askstring(title="USER", prompt="NOME DE USUÁRIO")
 
+def evento(user, nome_arquivo):
+
+    # Atualiza os arquivos
+    for i in tv_consult.get_children():
+        tv_consult.delete(i)
+    for arq in gen.get_arquivos():
+        tv_consult.insert("", "end", values=(arq, os.stat(f"Arquivos/{arq}").st_size))
+
+    # Deleta todos os itens de "interesses" e os recarrega
+    for i in tv_interest.get_children():
+        tv_interest.delete(i)
+    for arq in gen.get_interreses():
+        tv_interest.insert("", "end", values=(arq[2], arq[3]))
+
+    messagebox.showinfo("showinfo", f"{user}, 0 arquivo {nome_arquivo} de seu interesse foi carregado")
+ 
 # Objeto que conecta com o arquivo cliente
-gen = Gerente(user)
+gen = Gerente(user, evento)
 
 # Cria a janela principal da aplicação e define suas propriedades.
 app = tk.Tk("Aplicacao")
@@ -22,7 +38,7 @@ app.configure(bg=background)
 
 """SEÇÃO: ARQUIVOS DISPONÍVEIS"""
 # Cria uma seção para exibir os arquivos disponíveis.
-lblFrm_consult_section = tk.LabelFrame(master=app, text="CONSULTA", font=("Arial", 12, "bold"), bg=background)
+lblFrm_consult_section = tk.LabelFrame(master=app, text=f"CONSULTA - {user}", font=("Arial", 12, "bold"), bg=background)
 lblFrm_consult_section.grid(column=0, row=0, rowspan=2)
 
 # TreeView que mostra os arquivos disponíveis na seção de consulta.
@@ -118,10 +134,12 @@ def upload_area():
         for i in tv_consult.get_children():
             tv_consult.delete(i)
         for arq in gen.get_arquivos():
-            tv_consult.insert("", "end", values=(arq))
+            tv_consult.insert("", "end", values=(arq, os.stat(f"Arquivos/{arq}").st_size))
 
         # Avisa ao usuário que o upload foi feito
         messagebox.showinfo("showinfo", f"UPLOAD DE {nome_arquivo} FEITO COM SUCESSO")
+
+        up_app.destroy()
 
     # Botão para confirmar o carregamento do arquivo selecionado
     btn_upload = tk.Button(

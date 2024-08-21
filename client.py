@@ -2,17 +2,17 @@ import rpyc
 from tkinter import messagebox 
 
 class Gerente():
-    def __init__(self, user):
+    def __init__(self, user, event):
         self.user = user
         self.conn = rpyc.connect("localhost", 12345)
         self.gerente_arquivos = self.conn.root
 
         self.bgsrv = rpyc.BgServingThread(self.conn) 
 
-        self.event_listener = self.conn.root.user(self.evento, self.user)
+        self.event_listener = self.conn.root.user(event, self.user)
     
     def evento(self, nome_arquivo):
-        messagebox.showinfo("showinfo", f"O arquivo {nome_arquivo} de seu interesse foi carregado")
+        messagebox.showinfo("showinfo", f"{self.user}, 0 arquivo {nome_arquivo} de seu interesse foi carregado")
 
     def get_arquivos(self):
         return self.gerente_arquivos.listar_arquivos()

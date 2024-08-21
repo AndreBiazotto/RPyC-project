@@ -107,7 +107,7 @@ class Arquivos(rpyc.Service):
 
                                 dados = pd.DataFrame({"user": user, "interesse": interesse, "existe": existe})
                                 dados.to_csv("interesses.csv")
-                                self.callback(arq)
+                                self.callback(self.user, arq)
                 self.n_arquivos = n_arq
 
 
